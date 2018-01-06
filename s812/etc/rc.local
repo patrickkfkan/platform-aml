@@ -1,5 +1,7 @@
 #!/bin/sh
 
+/etc/hdmi.sh &
+
 dhclient eth0 &
 
-/etc/hdmi.sh &
+exit 0
