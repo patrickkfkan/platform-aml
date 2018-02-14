@@ -9,8 +9,6 @@ kernel/fs/cifs/cifs.ko
 kernel/fs/configfs/configfs.ko
 kernel/fs/cramfs/cramfs.ko
 kernel/fs/exportfs/exportfs.ko
-kernel/fs/ext2/ext2.ko
-kernel/fs/ext3/ext3.ko
 kernel/fs/ext4/ext4.ko
 kernel/fs/fat/fat.ko
 kernel/fs/fat/vfat.ko
@@ -18,7 +16,6 @@ kernel/fs/fat/msdos.ko
 kernel/fs/fscache/fscache.ko
 kernel/fs/fuse/fuse.ko
 kernel/fs/isofs/isofs.ko
-kernel/fs/jbd/jbd.ko
 kernel/fs/jbd2/jbd2.ko
 kernel/fs/jffs2/jffs2.ko
 kernel/fs/lockd/lockd.ko
@@ -46,7 +43,6 @@ kernel/crypto/aead.ko
 kernel/crypto/crypto_blkcipher.ko
 kernel/crypto/chainiv.ko
 kernel/crypto/eseqiv.ko
-kernel/crypto/seqiv.ko
 kernel/crypto/crypto_hash.ko
 kernel/crypto/pcompress.ko
 kernel/crypto/cryptomgr.ko
@@ -58,9 +54,6 @@ kernel/crypto/sha1_generic.ko
 kernel/crypto/sha256_generic.ko
 kernel/crypto/ecb.ko
 kernel/crypto/cbc.ko
-kernel/crypto/pcbc.ko
-kernel/crypto/ctr.ko
-kernel/crypto/ccm.ko
 kernel/crypto/des_generic.ko
 kernel/crypto/aes_generic.ko
 kernel/crypto/arc4.ko
@@ -116,15 +109,14 @@ kernel/drivers/amlogic/input/sensor/elan_epl6814.ko
 kernel/drivers/amlogic/input/sensor/ltr501_als.ko
 kernel/drivers/amlogic/input/sensor/isl29023.ko
 kernel/drivers/amlogic/ion_dev/amlIonDr.ko
-kernel/drivers/amlogic/ionvideo/videobuf2-ion.ko
-kernel/drivers/amlogic/ionvideo/ionvideo.ko
-kernel/drivers/amlogic/ionvideo/ppmgr2.ko
 kernel/drivers/amlogic/ppmgr/ppmgr.ko
 kernel/drivers/amlogic/ppmgr/ppmgr3d.ko
 kernel/drivers/amlogic/ppmgr/ppmgr_3d_tv.ko
+kernel/drivers/amlogic/spicc/spicc.ko
 kernel/drivers/amlogic/tvin/tvin_common.ko
 kernel/drivers/amlogic/tvin/hdmirx/tvin_hdmirx.ko
-kernel/drivers/amlogic/tvin/viu/tvin_viuin.ko
+kernel/drivers/amlogic/tvin/tvafe/tvin_afe.ko
+kernel/drivers/amlogic/tvin/vdin/tvin_vdin.ko
 kernel/drivers/amlogic/usb/dwc_otg/310/dwc_otg.ko
 kernel/drivers/amlogic/usb/phy/usbphy.ko
 kernel/drivers/amlogic/video_dev/amlcm.ko
@@ -154,6 +146,8 @@ kernel/drivers/devfreq/governor_simpleondemand.ko
 kernel/drivers/devfreq/governor_performance.ko
 kernel/drivers/devfreq/governor_powersave.ko
 kernel/drivers/devfreq/governor_userspace.ko
+kernel/drivers/gpu/arm/mali/mali.ko
+kernel/drivers/gpu/arm/ump/ump.ko
 kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/hid/hid.ko
 kernel/drivers/hid/uhid.ko
@@ -311,8 +305,6 @@ kernel/drivers/media/v4l2-core/v4l2-common.ko
 kernel/drivers/media/v4l2-core/v4l2-dv-timings.ko
 kernel/drivers/media/v4l2-core/videobuf-core.ko
 kernel/drivers/media/v4l2-core/videobuf-res.ko
-kernel/drivers/media/v4l2-core/videobuf2-core.ko
-kernel/drivers/media/v4l2-core/videobuf2-memops.ko
 kernel/drivers/mmc/card/mmc_block.ko
 kernel/drivers/mmc/core/mmc_core.ko
 kernel/drivers/mmc/host/mmci.ko
