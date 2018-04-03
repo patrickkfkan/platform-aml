@@ -7311,6 +7311,7 @@ alias of:N*T*Cti,pcm5142* snd_soc_pcm512x_i2c
 alias of:N*T*Cti,pcm5141* snd_soc_pcm512x_i2c
 alias of:N*T*Cti,pcm5122* snd_soc_pcm512x_i2c
 alias of:N*T*Cti,pcm5121* snd_soc_pcm512x_i2c
+alias platform:designware_i2s designware_i2s
 alias platform:odroid_dac_snd snd_soc_odroid_dac
 alias platform:odroid_dac2 snd_soc_odroid_dac2
 alias ip6t_addrtype xt_addrtype
