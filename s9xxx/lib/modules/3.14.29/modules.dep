@@ -633,7 +633,7 @@ kernel/sound/usb/snd-usbmidi-lib.ko: kernel/sound/core/snd-rawmidi.ko kernel/sou
 kernel/sound/soc/codecs/snd-soc-pcm5102.ko:
 kernel/sound/soc/codecs/snd-soc-pcm512x.ko:
 kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko: kernel/sound/soc/codecs/snd-soc-pcm512x.ko
-kernel/sound/soc/dwc/designware_i2s.ko:
+kernel/sound/soc/codecs/snd-soc-pcm512x-spi.ko: kernel/sound/soc/codecs/snd-soc-pcm512x.ko
 kernel/sound/soc/aml/m8/snd-soc-odroid-dac.ko:
 kernel/sound/soc/aml/m8/snd-soc-odroid-dac2.ko:
 kernel/sound/ac97_bus.ko:
