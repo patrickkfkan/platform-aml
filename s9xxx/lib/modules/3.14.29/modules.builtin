@@ -404,7 +404,16 @@ kernel/sound/soc/aml/m8/aml_notify.ko
 kernel/sound/soc/aml/m8/snd-soc-aml-hw-pcm2bt.ko
 kernel/sound/soc/aml/m8/snd-soc-aml-spdif-dai.ko
 kernel/sound/soc/aml/m8/snd-soc-aml-spdif-codec.ko
-kernel/sound/soc/aml/m8/snd-soc-odroid-hdmi.ko
+kernel/sound/soc/aml/m8/snd-soc-aml-m8.ko
+kernel/sound/soc/aml/m8/snd-soc-aml-g9tv.ko
+kernel/sound/soc/codecs/snd-soc-dummy_codec.ko
+kernel/sound/soc/codecs/snd-soc-pcm2bt.ko
+kernel/sound/soc/codecs/snd-soc-amlpmu4.ko
+kernel/sound/soc/codecs/snd-soc-aml_t9015.ko
+kernel/sound/soc/codecs/snd-soc-aml_t9015S.ko
+kernel/sound/soc/codecs/snd-soc-tas5707.ko
+kernel/sound/soc/codecs/snd-soc-tas5717.ko
+kernel/sound/soc/codecs/snd-soc-tas5731.ko
 kernel/sound/soc/dwc/designware_i2s.ko
 kernel/net/802/p8022.ko
 kernel/net/802/psnap.ko
