@@ -4,7 +4,6 @@ kernel/fs/isofs/isofs.ko:
 kernel/fs/hfsplus/hfsplus.ko:
 kernel/fs/fuse/fuse.ko:
 kernel/fs/fuse/cuse.ko: kernel/fs/fuse/fuse.ko
-kernel/fs/overlayfs/overlay.ko:
 kernel/fs/udf/udf.ko:
 kernel/fs/nilfs2/nilfs2.ko:
 kernel/crypto/crypto_engine.ko:

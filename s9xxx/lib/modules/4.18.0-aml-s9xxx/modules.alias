@@ -12,7 +12,6 @@ alias fs-fuse fuse
 alias fs-fusectl fuse
 alias devname:cuse cuse
 alias char-major-10-203 cuse
-alias fs-overlay overlay
 alias fs-udf udf
 alias fs-nilfs2 nilfs2
 alias crypto-gcm gcm

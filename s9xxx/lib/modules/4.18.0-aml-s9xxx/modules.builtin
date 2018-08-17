@@ -35,6 +35,7 @@ kernel/fs/nfs/filelayout/nfs_layout_nfsv41_files.ko
 kernel/fs/nfs_common/grace.ko
 kernel/fs/nls/nls_base.ko
 kernel/fs/nls/nls_cp437.ko
+kernel/fs/nls/nls_ascii.ko
 kernel/fs/nls/nls_iso8859-1.ko
 kernel/fs/nls/nls_utf8.ko
 kernel/fs/ntfs/ntfs.ko
@@ -44,6 +45,7 @@ kernel/fs/ocfs2/ocfs2_stack_o2cb.ko
 kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
 kernel/fs/ocfs2/dlm/ocfs2_dlm.ko
 kernel/fs/ocfs2/dlmfs/ocfs2_dlmfs.ko
+kernel/fs/overlayfs/overlay.ko
 kernel/fs/pstore/pstore.ko
 kernel/fs/quota/quota_tree.ko
 kernel/fs/reiserfs/reiserfs.ko
