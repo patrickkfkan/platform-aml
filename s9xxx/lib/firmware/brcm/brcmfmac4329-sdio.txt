@@ -1,4 +1,4 @@
-# bcm94329sdagb board
+# bcm4329 NVRAM file for Wandboard Dual
 # $Copyright (C) 2008 Broadcom Corporation$
 # $id$
 
