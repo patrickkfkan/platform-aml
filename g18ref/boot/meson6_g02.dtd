@@ -21,7 +21,7 @@ void root_func(){
 	#address-cells = <1>;
 	#size-cells = <1>;
 	chosen {
-	    bootargs = "root=/dev/ram0 rdinit=/init console=tty0 consoleblank=0 scaling_governor=interactive scaling_min_freq=200000 scaling_max_freq=1512000 systemd.show_status=auto";
+	    bootargs = "root=/dev/ram0 rdinit=/init console=tty0 console=ttyS0,115200n8 consoleblank=0 scaling_min_freq=200000 scaling_max_freq=1512000 systemd.show_status=auto";
 	};
 
 /// ***************************************************************************************

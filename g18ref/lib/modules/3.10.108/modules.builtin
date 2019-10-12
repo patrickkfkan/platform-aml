@@ -86,8 +86,6 @@ kernel/drivers/amlogic/nand/nand/aml_nftl_new/aml_nftl_dev.ko
 kernel/drivers/amlogic/ppmgr/ppmgr.ko
 kernel/drivers/amlogic/ppmgr/ppmgr3d.ko
 kernel/drivers/amlogic/ppmgr/ppmgr_3d_tv.ko
-kernel/drivers/amlogic/spi_nor/spi_nor.ko
-kernel/drivers/amlogic/spi_nor/apollo_spi_nor.ko
 kernel/drivers/amlogic/vfd/venus_vfd.ko
 kernel/drivers/amlogic/video_dev/amlcm.ko
 kernel/drivers/amlogic/video_dev/amlvideodri.ko
@@ -234,6 +232,7 @@ kernel/net/ipv6/ipv6.ko
 kernel/net/ipv6/inet6_hashtables.ko
 kernel/net/netfilter/x_tables.ko
 kernel/net/netfilter/xt_tcpudp.ko
+kernel/net/netfilter/xt_AUDIT.ko
 kernel/net/packet/af_packet.ko
 kernel/net/sched/sch_fq_codel.ko
 kernel/net/sunrpc/sunrpc.ko
