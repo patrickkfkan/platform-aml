@@ -20,9 +20,9 @@ void root_func(){
 	interrupt-parent = <&gic>;
 	#address-cells = <1>;
 	#size-cells = <1>;
-	chosen {
-	    bootargs = "root=/dev/ram0 rdinit=/init console=tty0 console=ttyS0,115200n8 consoleblank=0 scaling_min_freq=200000 scaling_max_freq=1512000 systemd.show_status=auto";
-	};
+	/*chosen {
+	    bootargs = "";
+	};*/
 
 /// ***************************************************************************************
 ///	-	CPU
@@ -383,7 +383,7 @@ void root_func(){
 	        f_max = <50000000>;
 	        f_max_w = <50000000>;
 	        max_req_size = <0x20000>;          /**128KB*/
-	        gpio_dat3 = "CARD_3";
+	        // gpio_dat3 = "CARD_3";
 	        gpio_cd = "CARD_6";
 	        gpio_power = "CARD_8";
 	        power_level = <0>;
