@@ -20,9 +20,9 @@ void root_func(){
 	interrupt-parent = <&gic>;
 	#address-cells = <1>;
 	#size-cells = <1>;
-	/*chosen {
+	chosen {
 	    bootargs = "";
-	};*/
+	};
 
 /// ***************************************************************************************
 ///	-	CPU
