@@ -484,6 +484,7 @@ alias symbol:em28xx_stop_urbs em28xx
 alias symbol:can_bus_off can_dev
 alias symbol:nf_nat_packet nf_nat
 alias symbol:cfg80211_send_unprot_deauth cfg80211
+alias symbol:rtw_set_gpio_output_value 8189es
 alias symbol:usbnet_generic_cdc_bind cdc_ether
 alias symbol:em28xx_read_ac97 em28xx
 alias symbol:flexcop_dump_reg b2c2_flexcop
@@ -676,6 +677,7 @@ alias symbol:au8522_release_state au8522_common
 alias symbol:dib0090_fw_register dib0090
 alias symbol:ieee80211_stop_queues mac80211
 alias symbol:em28xx_tuner_callback em28xx
+alias symbol:rtw_config_gpio 8189es
 alias symbol:ath9k_cmn_update_txpow ath9k_common
 alias symbol:dib0090_gain_control dib0090
 alias symbol:rt2800_conf_tx rt2800lib
@@ -1032,6 +1034,7 @@ alias symbol:flexcop_sram_ctrl b2c2_flexcop
 alias symbol:tea5767_autodetection tea5767
 alias symbol:cx2341x_ctrl_query cx2341x
 alias symbol:nf_conntrack_find_get nf_conntrack
+alias symbol:rtw_get_gpio 8189es
 alias symbol:flexcop_pass_dmx_packets b2c2_flexcop
 alias symbol:ip_tunnel_init_net ip_tunnel
 alias symbol:tda18271c2dd_attach tda18271c2dd

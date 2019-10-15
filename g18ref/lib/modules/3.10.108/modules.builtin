@@ -5,8 +5,6 @@ kernel/fs/autofs4/autofs4.ko
 kernel/fs/cifs/cifs.ko
 kernel/fs/configfs/configfs.ko
 kernel/fs/exportfs/exportfs.ko
-kernel/fs/ext2/ext2.ko
-kernel/fs/ext3/ext3.ko
 kernel/fs/ext4/ext4.ko
 kernel/fs/f2fs/f2fs.ko
 kernel/fs/fat/fat.ko
@@ -15,7 +13,6 @@ kernel/fs/fscache/fscache.ko
 kernel/fs/hfs/hfs.ko
 kernel/fs/hfsplus/hfsplus.ko
 kernel/fs/isofs/isofs.ko
-kernel/fs/jbd/jbd.ko
 kernel/fs/jbd2/jbd2.ko
 kernel/fs/lockd/lockd.ko
 kernel/fs/nfs/nfs.ko
@@ -78,6 +75,7 @@ kernel/drivers/amlogic/ethernet/phy/am_micrel.ko
 kernel/drivers/amlogic/ethernet/phy/am_smsc8720.ko
 kernel/drivers/amlogic/gpu/ump/ump.ko
 kernel/drivers/amlogic/i2c/aml_i2c.ko
+kernel/drivers/amlogic/input/keyboard/adc_keypad.ko
 kernel/drivers/amlogic/input/keyboard/key_input.ko
 kernel/drivers/amlogic/input/remote/remote.ko
 kernel/drivers/amlogic/ionvideo/videobuf2-ion.ko
@@ -87,6 +85,8 @@ kernel/drivers/amlogic/nand/nand/aml_nftl_new/aml_nftl_dev.ko
 kernel/drivers/amlogic/ppmgr/ppmgr.ko
 kernel/drivers/amlogic/ppmgr/ppmgr3d.ko
 kernel/drivers/amlogic/ppmgr/ppmgr_3d_tv.ko
+kernel/drivers/amlogic/spi_nor/spi_nor.ko
+kernel/drivers/amlogic/spi_nor/apollo_spi_nor.ko
 kernel/drivers/amlogic/vfd/venus_vfd.ko
 kernel/drivers/amlogic/video_dev/amlcm.ko
 kernel/drivers/amlogic/video_dev/amlvideodri.ko
