@@ -383,7 +383,7 @@ void root_func(){
 	        f_max = <50000000>;
 	        f_max_w = <50000000>;
 	        max_req_size = <0x20000>;          /**128KB*/
-	        gpio_dat3 = "CARD_3";
+	        // gpio_dat3 = "CARD_3";
 	        gpio_cd = "CARD_6";
 	        gpio_power = "CARD_8";
 	        power_level = <0>;
@@ -737,7 +737,7 @@ void root_func(){
 		status = "ok";
 		reg = <0xcc000000 0x04000000>;
 		pinctrl-names = "default";
-		pinctrl-0 = <&aml_spi_nor_pins>;
+		#pinctrl-0 = <&aml_spi_nor_pins>;
 
 		nr-parts = <2>;
 		nr-part-0 = <&bootloader>;
