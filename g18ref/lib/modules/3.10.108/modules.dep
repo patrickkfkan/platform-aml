@@ -1,8 +1,27 @@
+kernel/fs/exfat/exfat_core.ko:
+kernel/fs/exfat/exfat_fs.ko: kernel/fs/exfat/exfat_core.ko
+kernel/fs/isofs/isofs.ko:
+kernel/fs/hfsplus/hfsplus.ko:
+kernel/fs/hfs/hfs.ko:
+kernel/fs/udf/udf.ko:
 kernel/crypto/ansi_cprng.ko:
 kernel/drivers/video/backlight/lcd.ko:
 kernel/drivers/char/hw_random/rng-core.ko:
 kernel/drivers/char/hw_random/meson-rng.ko: kernel/drivers/char/hw_random/rng-core.ko
-kernel/drivers/amlogic/wifi/rtl8xxx_EU/8188eu.ko:
-kernel/drivers/amlogic/wifi/broadcm_40181/dhd.ko:
+kernel/drivers/net/usb/asix.ko:
+kernel/drivers/net/usb/ax88179_178a.ko:
+kernel/drivers/net/usb/cdc_ether.ko:
+kernel/drivers/net/usb/net1080.ko:
+kernel/drivers/net/usb/cdc_subset.ko:
+kernel/drivers/net/usb/zaurus.ko: kernel/drivers/net/usb/cdc_ether.ko
+kernel/drivers/net/usb/cdc_ncm.ko:
+kernel/drivers/net/usb/qf9700.ko:
+kernel/drivers/net/usb/sr9600.ko:
 kernel/drivers/amlogic/pmu/aml_pmu_dev.ko:
 kernel/drivers/amlogic/gpu/mali/mali.ko:
+kernel/sound/core/snd-hrtimer.ko:
+kernel/sound/soc/codecs/snd-soc-rt5631.ko:
+kernel/sound/soc/codecs/snd-soc-wm8960.ko:
+kernel/sound/soc/codecs/snd-soc-pcm2bt.ko:
+kernel/sound/soc/aml/m6/snd-soc-aml-m6-rt5631.ko:
+kernel/sound/soc/aml/m6/snd-soc-aml-m6-wm8960.ko:
