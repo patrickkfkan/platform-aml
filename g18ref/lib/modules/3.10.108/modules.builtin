@@ -4,6 +4,8 @@ kernel/fs/binfmt_script.ko
 kernel/fs/mbcache.ko
 kernel/fs/autofs4/autofs4.ko
 kernel/fs/cramfs/cramfs.ko
+kernel/fs/exfat/exfat_core.ko
+kernel/fs/exfat/exfat_fs.ko
 kernel/fs/exportfs/exportfs.ko
 kernel/fs/ext2/ext2.ko
 kernel/fs/ext3/ext3.ko
@@ -12,6 +14,9 @@ kernel/fs/fat/fat.ko
 kernel/fs/fat/vfat.ko
 kernel/fs/fat/msdos.ko
 kernel/fs/fuse/fuse.ko
+kernel/fs/hfs/hfs.ko
+kernel/fs/hfsplus/hfsplus.ko
+kernel/fs/isofs/isofs.ko
 kernel/fs/jbd/jbd.ko
 kernel/fs/jbd2/jbd2.ko
 kernel/fs/nls/nls_base.ko
@@ -22,6 +27,7 @@ kernel/fs/overlayfs/overlayfs.ko
 kernel/fs/quota/quota_v2.ko
 kernel/fs/quota/quota_tree.ko
 kernel/fs/squashfs/squashfs.ko
+kernel/fs/udf/udf.ko
 kernel/crypto/crypto.ko
 kernel/crypto/crypto_wq.ko
 kernel/crypto/crypto_algapi.ko
@@ -164,7 +170,16 @@ kernel/drivers/net/ppp/pppox.ko
 kernel/drivers/net/ppp/pppolac.ko
 kernel/drivers/net/ppp/pppopns.ko
 kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/usb/asix.ko
+kernel/drivers/net/usb/ax88179_178a.ko
+kernel/drivers/net/usb/cdc_ether.ko
+kernel/drivers/net/usb/net1080.ko
+kernel/drivers/net/usb/cdc_subset.ko
+kernel/drivers/net/usb/zaurus.ko
 kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/cdc_ncm.ko
+kernel/drivers/net/usb/qf9700.ko
+kernel/drivers/net/usb/sr9600.ko
 kernel/drivers/of/of_i2c.ko
 kernel/drivers/of/of_mdio.ko
 kernel/drivers/scsi/scsi_mod.ko
@@ -212,7 +227,11 @@ kernel/sound/soc/aml/m6/snd-soc-aml-platform-pcm2bt.ko
 kernel/sound/soc/aml/m6/snd-soc-aml-hw-pcm2bt.ko
 kernel/sound/soc/aml/m6/aml_audio_codec_probe.ko
 kernel/sound/soc/aml/m6/aml_mixer.ko
+kernel/sound/soc/aml/m6/snd-soc-aml-m6-rt5631.ko
+kernel/sound/soc/aml/m6/snd-soc-aml-m6-wm8960.ko
 kernel/sound/soc/aml/m6/snd-soc-aml-m-dummy.ko
+kernel/sound/soc/codecs/snd-soc-rt5631.ko
+kernel/sound/soc/codecs/snd-soc-wm8960.ko
 kernel/sound/soc/codecs/snd-soc-dummy_codec.ko
 kernel/sound/usb/snd-usb-audio.ko
 kernel/sound/usb/snd-usbmidi-lib.ko
