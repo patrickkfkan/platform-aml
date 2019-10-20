@@ -3,6 +3,10 @@ alias crypto-ansi_cprng ansi_cprng
 alias ansi_cprng ansi_cprng
 alias crypto-stdrng ansi_cprng
 alias stdrng ansi_cprng
+alias hid:b0003g*v00002252p00000106 hid_hbgic_kbd
+alias usb:v07B8p8179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
+alias usb:v0BDAp0179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
+alias usb:v0BDAp8179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
 alias sdio:c00v*d* dhd
 alias sdio:c*v02D0dA8E7* dhd
 alias sdio:c*v02D0d4324* dhd
