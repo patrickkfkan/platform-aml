@@ -1,0 +1,11 @@
+[Unit]
+Description=Pause, then resume, between tracks
+After=mpd.service
+
+[Service]
+Type=idle
+Restart=always
+ExecStart=/usr/local/bin/mpd-pause-btw-tracks.sh
+
+[Install]
+WantedBy=multi-user.target
