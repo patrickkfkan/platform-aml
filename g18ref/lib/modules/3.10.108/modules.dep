@@ -1,9 +1,0 @@
-kernel/crypto/ansi_cprng.ko:
-kernel/drivers/video/backlight/lcd.ko:
-kernel/drivers/char/hw_random/rng-core.ko:
-kernel/drivers/char/hw_random/meson-rng.ko: kernel/drivers/char/hw_random/rng-core.ko
-kernel/drivers/hid/hid-hbgic-kbd.ko:
-kernel/drivers/amlogic/wifi/rtl8xxx_EU/8188eu.ko:
-kernel/drivers/amlogic/wifi/broadcm_40181/dhd.ko:
-kernel/drivers/amlogic/pmu/aml_pmu_dev.ko:
-kernel/drivers/amlogic/gpu/mali/mali.ko:
