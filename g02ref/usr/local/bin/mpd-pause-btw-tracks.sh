@@ -21,18 +21,15 @@
 # errors + crackling noises. Unfortunately, this script cannot work around
 # that issue.
 
-LAST_EVENT=""
 while true
 do
-    EVENT=$(mpc idle)
-    #echo "EVENT: ${EVENT}"
-    #echo "LAST_EVENT: ${LAST_EVENT}"
-    if [[ "$EVENT" =~ "player" && "$LAST_EVENT" =~ "playlist" ]]; then
+    EVENT=$(mpc idle playlist player)
+    STATUS=$(mpc)
+    if [[ "$EVENT" =~ "playlist" && "$EVENT" =~ "player" && 
+            "$STATUS" =~ "[playing]" && "$STATUS" =~ "(0%)" ]]; then
         # Track change detected
-        LAST_EVENT=""
+        echo "Track change detected - giving it a pause to clear current state"
         mpc -q pause
         mpc -q play
-    else
-        LAST_EVENT=$EVENT
     fi
 done
