@@ -94,6 +94,7 @@ kernel/drivers/amlogic/spi_nor/apollo_spi_nor.ko
 kernel/drivers/amlogic/tvin/tvin_common.ko
 kernel/drivers/amlogic/tvin/bt656/tvin_bt656.ko
 kernel/drivers/amlogic/tvin/vdin/tvin_vdin.ko
+kernel/drivers/amlogic/vfd/venus_vfd.ko
 kernel/drivers/amlogic/video_dev/amlcm.ko
 kernel/drivers/amlogic/video_dev/amlvideodri.ko
 kernel/drivers/amlogic/video_dev/amlvideo2dri.ko

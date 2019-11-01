@@ -63,7 +63,6 @@ kernel/drivers/amlogic/wifi/broadcm_40181/dhd.ko: kernel/net/wireless/cfg80211.k
 kernel/drivers/amlogic/bluetooth/rtk8723/rtk_btusb.ko:
 kernel/drivers/amlogic/pmu/aml_pmu_dev.ko:
 kernel/drivers/amlogic/gpu/mali/mali.ko:
-kernel/drivers/amlogic/vfd/venus_vfd.ko:
 kernel/drivers/scsi/scsi_mod.ko:
 kernel/drivers/scsi/sd_mod.ko: kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/scsi/sr_mod.ko: kernel/drivers/cdrom/cdrom.ko kernel/drivers/scsi/scsi_mod.ko
