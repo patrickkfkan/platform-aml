@@ -75,9 +75,7 @@ kernel/drivers/amlogic/camera/amlcamera.ko
 kernel/drivers/amlogic/deinterlace/di.ko
 kernel/drivers/amlogic/display/ge2d/ge2d.ko
 kernel/drivers/amlogic/display/osd/fb.ko
-kernel/drivers/amlogic/display/osd_ext/fb_ext.ko
 kernel/drivers/amlogic/display/vout/am_tvout.ko
-kernel/drivers/amlogic/display/vout2/am_tvout2.ko
 kernel/drivers/amlogic/ethernet/am_net8218.ko
 kernel/drivers/amlogic/ethernet/phy/am_ip101.ko
 kernel/drivers/amlogic/ethernet/phy/am_micrel.ko
@@ -155,6 +153,8 @@ kernel/drivers/net/tun.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/of/of_i2c.ko
 kernel/drivers/of/of_mdio.ko
+kernel/drivers/spi/spi-bitbang.ko
+kernel/drivers/spi/spi-gpio.ko
 kernel/drivers/staging/android/logger.ko
 kernel/drivers/staging/zram/zram.ko
 kernel/drivers/switch/switch_class.ko
