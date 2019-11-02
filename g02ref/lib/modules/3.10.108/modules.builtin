@@ -64,14 +64,6 @@ kernel/drivers/amlogic/amports/amvdec_avs.ko
 kernel/drivers/amlogic/amports/jpegdec.ko
 kernel/drivers/amlogic/amports/picdec.ko
 kernel/drivers/amlogic/audiodsp/audiodsp.ko
-kernel/drivers/amlogic/camera/gt2005dri.ko
-kernel/drivers/amlogic/camera/gc0308dri.ko
-kernel/drivers/amlogic/camera/gc0328dri.ko
-kernel/drivers/amlogic/camera/gc2035dri.ko
-kernel/drivers/amlogic/camera/ov5640dri.ko
-kernel/drivers/amlogic/camera/hi253dri.ko
-kernel/drivers/amlogic/camera/amlvm.ko
-kernel/drivers/amlogic/camera/amlcamera.ko
 kernel/drivers/amlogic/deinterlace/di.ko
 kernel/drivers/amlogic/display/ge2d/ge2d.ko
 kernel/drivers/amlogic/display/osd/fb.ko
@@ -138,7 +130,6 @@ kernel/drivers/media/usb/uvc/uvcvideo.ko
 kernel/drivers/media/v4l2-core/videodev.ko
 kernel/drivers/media/v4l2-core/v4l2-common.ko
 kernel/drivers/media/v4l2-core/videobuf-core.ko
-kernel/drivers/media/v4l2-core/videobuf-vmalloc.ko
 kernel/drivers/media/v4l2-core/videobuf-res.ko
 kernel/drivers/media/v4l2-core/videobuf2-core.ko
 kernel/drivers/media/v4l2-core/videobuf2-memops.ko
