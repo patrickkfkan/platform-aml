@@ -232,6 +232,7 @@ kernel/net/ipv4/tcp_cubic.ko
 kernel/net/ipv6/ipv6.ko
 kernel/net/ipv6/inet6_hashtables.ko
 kernel/net/packet/af_packet.ko
+kernel/net/rfkill/rfkill.ko
 kernel/net/sched/sch_fq_codel.ko
 kernel/net/sunrpc/sunrpc.ko
 kernel/net/sunrpc/auth_gss/auth_rpcgss.ko

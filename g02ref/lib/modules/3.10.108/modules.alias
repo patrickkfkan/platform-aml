@@ -2722,6 +2722,9 @@ alias usb:v0BDAp8712d*dc*dsc*dp*ic*isc*ip*in* r8712u
 alias usb:v0BDAp8173d*dc*dsc*dp*ic*isc*ip*in* r8712u
 alias usb:v0BDAp8171d*dc*dsc*dp*ic*isc*ip*in* r8712u
 alias usb:v160Ap3184d*dc*dsc*dp*ic*isc*ip*in* vt6656_stage
+alias usb:v07B8p8179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
+alias usb:v0BDAp0179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
+alias usb:v0BDAp8179d*dc*dsc*dp*ic*isc*ip*in* 8188eu
 alias sdio:c00v*d* dhd
 alias sdio:c*v02D0dA8E7* dhd
 alias sdio:c*v02D0d4324* dhd
