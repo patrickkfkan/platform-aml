@@ -86,7 +86,6 @@ kernel/drivers/amlogic/i2c/aml_i2c.ko
 kernel/drivers/amlogic/input/keyboard/adc_keypad.ko
 kernel/drivers/amlogic/input/keyboard/key_input.ko
 kernel/drivers/amlogic/input/remote/remote.ko
-kernel/drivers/amlogic/ion_dev/amlIonDr.ko
 kernel/drivers/amlogic/ionvideo/videobuf2-ion.ko
 kernel/drivers/amlogic/ionvideo/ionvideo.ko
 kernel/drivers/amlogic/ionvideo/ppmgr2.ko
@@ -157,12 +156,10 @@ kernel/drivers/net/phy/libphy.ko
 kernel/drivers/of/of_i2c.ko
 kernel/drivers/of/of_mdio.ko
 kernel/drivers/staging/android/logger.ko
-kernel/drivers/staging/zram/zram.ko
 kernel/drivers/switch/switch_class.ko
 kernel/drivers/tty/serial/serial_core.ko
 kernel/drivers/uio/uio.ko
 kernel/drivers/uio/uio_pdrv.ko
-kernel/drivers/uio/uio_pdrv_genirq.ko
 kernel/drivers/usb/usb-common.ko
 kernel/drivers/usb/core/usbcore.ko
 kernel/drivers/usb/serial/usbserial.ko
