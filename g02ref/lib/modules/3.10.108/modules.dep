@@ -44,17 +44,6 @@ kernel/drivers/usb/storage/usb-storage.ko: kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/usb/storage/ums-realtek.ko: kernel/drivers/usb/storage/usb-storage.ko kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/usb/class/cdc-acm.ko:
 kernel/drivers/usb/class/cdc-wdm.ko:
-kernel/drivers/bluetooth/hci_vhci.ko:
-kernel/drivers/bluetooth/hci_uart.ko:
-kernel/drivers/bluetooth/bcm203x.ko:
-kernel/drivers/bluetooth/bpa10x.ko:
-kernel/drivers/bluetooth/bfusb.ko:
-kernel/drivers/bluetooth/btusb.ko:
-kernel/drivers/bluetooth/btsdio.ko:
-kernel/drivers/bluetooth/ath3k.ko:
-kernel/drivers/bluetooth/btmrvl.ko:
-kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko
-kernel/drivers/cpufreq/cpufreq_stats.ko:
 kernel/drivers/hid/hid-hbgic-kbd.ko:
 kernel/drivers/amlogic/wifi/rtl8192EU/8192eu.ko: kernel/net/wireless/cfg80211.ko
 kernel/drivers/amlogic/wifi/rtl8812AU/8812au.ko: kernel/net/wireless/cfg80211.ko
@@ -65,6 +54,17 @@ kernel/drivers/amlogic/gpu/mali/mali.ko:
 kernel/drivers/scsi/scsi_mod.ko:
 kernel/drivers/scsi/sd_mod.ko: kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/scsi/sr_mod.ko: kernel/drivers/cdrom/cdrom.ko kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/bluetooth/hci_vhci.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/hci_uart.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/bcm203x.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/bpa10x.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/bfusb.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btusb.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btsdio.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/ath3k.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btmrvl.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/ssb/ssb.ko:
 kernel/sound/core/snd-hwdep.ko:
 kernel/sound/core/snd-hrtimer.ko:
 kernel/sound/core/snd-rawmidi.ko:
@@ -170,9 +170,6 @@ kernel/net/ipv6/xfrm6_mode_beet.ko: kernel/net/ipv6/ipv6.ko
 kernel/net/ipv6/mip6.ko: kernel/net/ipv6/ipv6.ko
 kernel/net/ipv6/sit.ko: kernel/net/ipv4/ip_tunnel.ko kernel/net/ipv4/tunnel4.ko kernel/net/ipv6/ipv6.ko
 kernel/net/ipv6/ip6_tunnel.ko: kernel/net/ipv6/tunnel6.ko kernel/net/ipv6/ipv6.ko
-kernel/net/bluetooth/rfcomm/rfcomm.ko:
-kernel/net/bluetooth/bnep/bnep.ko:
-kernel/net/bluetooth/hidp/hidp.ko:
 kernel/net/wireless/cfg80211.ko:
 kernel/net/llc/llc.ko:
 kernel/net/unix/unix.ko:
@@ -181,6 +178,9 @@ kernel/net/packet/af_packet.ko:
 kernel/net/packet/af_packet_diag.ko: kernel/net/packet/af_packet.ko
 kernel/net/key/af_key.ko: kernel/net/xfrm/xfrm_algo.ko
 kernel/net/bridge/bridge.ko: kernel/net/802/stp.ko kernel/net/llc/llc.ko
+kernel/net/bluetooth/bluetooth.ko:
+kernel/net/bluetooth/rfcomm/rfcomm.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/net/bluetooth/hidp/hidp.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/net/sunrpc/sunrpc.ko:
 kernel/net/phonet/phonet.ko:
 kernel/net/phonet/pn_pep.ko: kernel/net/phonet/phonet.ko
