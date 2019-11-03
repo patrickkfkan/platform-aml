@@ -190,6 +190,7 @@ kernel/drivers/media/rc/streamzap.ko
 kernel/drivers/media/rc/gpio-ir-recv.ko
 kernel/drivers/media/rc/iguanair.ko
 kernel/drivers/media/rc/ttusbir.ko
+kernel/drivers/media/usb/gspca/gspca_main.ko
 kernel/drivers/hid/hid-dr.ko
 kernel/drivers/hid/hid-lenovo-tpkbd.ko
 kernel/drivers/hid/hid-picolcd.ko
