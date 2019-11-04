@@ -1,8 +1,10 @@
 Credits:
-- Kernel sources provided by LibreELEC project
-- Kernel patches:
+- Kernel sources provided by LibreELEC project (https://github.com/LibreELEC/linux-amlogic)
+- Kernel patches*:
   -- OverlayFS provided by adilinden-oss (https://github.com/adilinden-oss/overlayfs-patches)
   -- The rest by emanuel4you as part of his g02ref LibreELEC build (https://forum.libreelec.tv/thread/14107-9-x-devel-libreelec-builds-for-g02ref-g02ref-th2-prima-pm-6001-vs-ip166-vs-ip015)
+
+* These patches have been archived in <locationofplatform-aml>/g02ref/boot/kernel_patches.tar.gz for convenience. Only those that are relevant to the Volumio build are included.
 
 Download toolchain for compiling kernel:
 > wget https://developer.arm.com/-/media/Files/downloads/gnu-a/8.3-2019.03/binrel/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf.tar.xz
@@ -22,7 +24,7 @@ Fetch the kernel:
 > cd linux-amlogic
 
 Apply kernel patches:
-> find ../patches -type f -name '*.patch' -print0 | xargs -0 patch -p1
+> find ../patches -type f -name '*.patch' -print0 | sort -z | xargs -t -0 -n 1 patch -p1 -i
 
 Copy kernel config:
 > cp <locationofplatform-aml>/g02ref/boot/config-3.10.108 .config
