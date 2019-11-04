@@ -1,0 +1,40 @@
+Credits:
+- Kernel sources provided by LibreELEC project
+- Kernel patches:
+  -- OverlayFS provided by adilinden-oss (https://github.com/adilinden-oss/overlayfs-patches)
+  -- The rest by emanuel4you as part of his g02ref LibreELEC build (https://forum.libreelec.tv/thread/14107-9-x-devel-libreelec-builds-for-g02ref-g02ref-th2-prima-pm-6001-vs-ip166-vs-ip015)
+
+Download toolchain for compiling kernel:
+> wget https://developer.arm.com/-/media/Files/downloads/gnu-a/8.3-2019.03/binrel/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf.tar.xz
+> tar -xf gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf.tar.xz
+
+Set environment variables:
+> export PATH=$PWD/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+> export ARCH=arm
+> export CROSS_COMPILE=arm-linux-gnueabihf-
+
+Unpack kernel patches:
+> mkdir patches
+> tar -xzf <locationofplatform-aml>/g02ref/boot/kernel_patches.tar.gz -C patches
+
+Fetch the kernel:
+> git clone https://github.com/LibreELEC/linux-amlogic.git -b amlogic-3.10.y
+> cd linux-amlogic
+
+Apply kernel patches:
+> find patches -type f -name '*.patch' -print0 | xargs -0 patch -p1
+
+Copy kernel config:
+> cp <locationofplatform-aml>/g02ref/boot/config-3.10.108 .config
+
+Configure kernel if necessary:
+> make menuconfig
+
+Make u-boot kernel image with appended DTB and modules:
+> make meson6_g02.dtd
+> make uImage-dtb modules
+
+Copy kernel image and modules to platform files:
+> cp arch/arm/boot/uImage-dtb <locationofplatform-aml>/g02ref/boot/uImage
+> make modules_install INSTALL_MOD_PATH=<locationofplatform-aml>/g02ref
+
