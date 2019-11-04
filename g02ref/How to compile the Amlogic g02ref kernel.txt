@@ -22,7 +22,7 @@ Fetch the kernel:
 > cd linux-amlogic
 
 Apply kernel patches:
-> find patches -type f -name '*.patch' -print0 | xargs -0 patch -p1
+> find ../patches -type f -name '*.patch' -print0 | xargs -0 patch -p1
 
 Copy kernel config:
 > cp <locationofplatform-aml>/g02ref/boot/config-3.10.108 .config
