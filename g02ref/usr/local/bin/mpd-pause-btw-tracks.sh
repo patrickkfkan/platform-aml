@@ -28,8 +28,12 @@ do
     if [[ "$EVENT" =~ "playlist" && "$EVENT" =~ "player" && 
             "$STATUS" =~ "[playing]" && "$STATUS" =~ "(0%)" ]]; then
         # Track change detected
-        echo "Track change detected - giving it a pause to clear current state"
-        mpc -q pause
-        mpc -q play
+        if [[ $(volumio status | grep service | grep webradio) ]]; then
+            echo "Track change detected but service is webradio, so ignoring it"
+        else
+            echo "Track change detected - giving it a pause to clear current state"
+            mpc -q pause
+            mpc -q play
+        fi
     fi
 done
