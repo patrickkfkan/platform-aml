@@ -86,3 +86,6 @@ else
     echo 50 > $f
   done
 fi
+
+clear
+
