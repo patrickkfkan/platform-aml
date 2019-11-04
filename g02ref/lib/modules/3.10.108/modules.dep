@@ -5,6 +5,8 @@ kernel/fs/isofs/isofs.ko:
 kernel/fs/nfs/nfs.ko: kernel/fs/lockd/lockd.ko kernel/net/sunrpc/sunrpc.ko
 kernel/fs/nfs/nfsv2.ko: kernel/fs/nfs/nfs.ko kernel/fs/lockd/lockd.ko kernel/net/sunrpc/sunrpc.ko
 kernel/fs/nfs/nfsv3.ko: kernel/fs/nfs/nfs.ko kernel/fs/lockd/lockd.ko kernel/net/sunrpc/sunrpc.ko
+kernel/fs/nfs/nfsv4.ko: kernel/fs/nfs/nfs.ko kernel/fs/lockd/lockd.ko kernel/net/sunrpc/sunrpc.ko
+kernel/fs/nfs/nfs_layout_nfsv41_files.ko: kernel/fs/nfs/nfsv4.ko kernel/fs/nfs/nfs.ko kernel/fs/lockd/lockd.ko kernel/net/sunrpc/sunrpc.ko
 kernel/fs/lockd/lockd.ko: kernel/net/sunrpc/sunrpc.ko
 kernel/fs/ntfs/ntfs.ko:
 kernel/fs/udf/udf.ko:
@@ -44,6 +46,15 @@ kernel/drivers/usb/storage/usb-storage.ko: kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/usb/storage/ums-realtek.ko: kernel/drivers/usb/storage/usb-storage.ko kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/usb/class/cdc-acm.ko:
 kernel/drivers/usb/class/cdc-wdm.ko:
+kernel/drivers/usb/serial/usbserial.ko:
+kernel/drivers/usb/serial/ch341.ko: kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/usb/serial/cp210x.ko: kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/usb/serial/ftdi_sio.ko: kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/usb/serial/iuu_phoenix.ko: kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/usb/serial/pl2303.ko: kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/media/v4l2-core/videobuf2-vmalloc.ko:
+kernel/drivers/media/usb/uvc/uvcvideo.ko: kernel/drivers/media/v4l2-core/videobuf2-vmalloc.ko
+kernel/drivers/media/dvb-core/dvb-core.ko:
 kernel/drivers/cpufreq/cpufreq_stats.ko:
 kernel/drivers/hid/hid-hbgic-kbd.ko:
 kernel/drivers/amlogic/wifi/rtl8192EU/8192eu.ko: kernel/net/wireless/cfg80211.ko
@@ -65,6 +76,7 @@ kernel/drivers/bluetooth/btsdio.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/drivers/bluetooth/ath3k.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/drivers/bluetooth/btmrvl.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/ssb/ssb.ko:
 kernel/sound/core/snd-hwdep.ko:
 kernel/sound/core/snd-hrtimer.ko:
 kernel/sound/core/snd-rawmidi.ko:
@@ -183,10 +195,13 @@ kernel/net/bluetooth/rfcomm/rfcomm.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/net/bluetooth/bnep/bnep.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/net/bluetooth/hidp/hidp.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/net/sunrpc/sunrpc.ko:
+kernel/net/sunrpc/auth_gss/auth_rpcgss.ko: kernel/lib/oid_registry.ko kernel/net/sunrpc/sunrpc.ko
 kernel/net/phonet/phonet.ko:
 kernel/net/phonet/pn_pep.ko: kernel/net/phonet/phonet.ko
 kernel/net/mac80211/mac80211.ko: kernel/net/wireless/cfg80211.ko
+kernel/net/dns_resolver/dns_resolver.ko:
 kernel/lib/raid6/raid6_pq.ko:
 kernel/lib/ts_kmp.ko:
 kernel/lib/ts_bm.ko:
 kernel/lib/ts_fsm.ko:
+kernel/lib/oid_registry.ko:
