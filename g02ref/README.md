@@ -12,7 +12,7 @@ The unit tested is a Miso-M1:
 ![Back](miso-m1_back.jpg)
 ![Interior](miso-m1_interior.jpg)
 
-Other g02ref devices more or less share the same design and features.
+Other g02ref devices have more or less the same design and features.
 
 ### Building Volumio for g02ref
 
