@@ -37,7 +37,7 @@ Some g02ref devices have a switch hidden behind the AV port and can be set to bo
 
 On other g02ref devices, such as the Miso-M1 test unit, there is no switch behind the AV port. Instead you would have to long-press the power button. You might not succeed on first try and boot into Android, in which case you would long-press the power button until the device shuts down (green LED turns red), and long-press the power button again.
 
-On first boot, Volumio might take a while to initialize. Please allow 5-10 minutes for this process, during which nothing will be shown on screen. After successful initialization, you will presented with the login prompt and VFD will show the time (which could be incorrect - you would have to run `dpkg-reconfigure tzdata` to configure).
+On first boot, Volumio might take a while to initialize. Please allow 5-10 minutes for this process, during which nothing will be shown on screen. After initialization and Volumio boots successfully, you will be presented with the login prompt and VFD will show the time (if the time is incorrect - you would have to run `dpkg-reconfigure tzdata` to configure).
 
 Note that you don't have to connect a screen to the device at all. Volumio will run fine without HDMI connected.
 
