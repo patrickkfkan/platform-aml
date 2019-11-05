@@ -31,6 +31,16 @@ If you want to compile the kernel yourself, you can find instructions in `How to
 
 Note that g02ref devices commonly have a DVB tuner attached for receiving digital TV broadcasts. For the purpose of running Volumio, however, the DVB drivers have been left out from the kernel to keep its footprint small.
 
+### Booting Volumio on g02ref devices
+
+Some g02ref devices have a switch hidden behind the AV port and can be set to boot from MicroSD using the "toothpick" method. After inserting the MicroSD card (with Volumio on it), you insert a toothpick into the AV port until you feel it pressing against the switch. Then, without taking out the toothpick, you connect the device to the power supply and wait for the device to boot from the MicroSD card. You can take the toothpick out after a while when you don't see the normal splash screen (which means the device is booting from the MicroSD).
+
+On other g02ref devices, such as the Miso-M1 test unit, there is no switch behind the AV port. Instead you would have to long-press the power button. You might not succeed on first try and boot into Android, in which case you would long-press the power button until the device shuts down (green LED turns red), and long-press the power button again.
+
+On first boot, Volumio might take a while to initialize. Please allow 5-10 minutes for this process, during which nothing will be shown on screen. After successful initialization, you will presented with the login prompt and VFD will show the time (which could be incorrect - you would have to run `dpkg-reconfigure tzdata` to configure).
+
+Note that you don't have to connect a screen to the device at all. Volumio will run fine without HDMI connected.
+
 ### Known issues
 
 ##### Resampling
