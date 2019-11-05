@@ -20,7 +20,7 @@ You should do this on Debian Jessie (perhaps in a VM). You may have read that yo
 
 Make sure you have the required packages installed (read Volumio official documentation), then:
 ```sh
-> git clone https://github.com/patrickkfkan/volumio-build
+> git clone https://github.com/patrickkfkan/volumio-build.git
 > cd volumio-build
 > ./build.sh -b armv7 -d amlg02ref -v 2.657
 ```
